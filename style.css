@@ -10,7 +10,7 @@ body{
     width: 100%;
     flex-shrink: 0;
     margin: 0% 1.9%;
-    background: #fff;
+    background: #FFF2E5;
     width: 20.5rem;
 }
 
@@ -24,7 +24,7 @@ body{
 }
 
 .header-tom{
-    padding: 2rem 6.94rem;
+    padding: 2rem 6.94rem 1rem 6.94rem;
 }
 
 .header-tom h1{
@@ -37,6 +37,8 @@ body{
 }
 
 .header-tom h2{
+    width: 7rem;
+    display: flex;
     color: #000;
     font-family: Roboto;
     font-size: 1rem;
@@ -45,9 +47,18 @@ body{
     line-height: normal;
 }
 
-.header-nav{
+.header-nav{  
     padding: 0 5.31rem;
+    display: grid; /* Define o container como um grid */
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de igual largura */
+    grid-auto-rows: 1fr; /* Cria linhas com altura automática */
+    gap: 0.5rem;
+    justify-items: center; /* Alinha os itens do grid ao centro no eixo horizontal */
+    align-items: center; /* Alinha os itens do grid ao centro no eixo vertical */
+    margin: 0 auto; /* Alinha os itens do grid ao centro horizontalmente e verticalmente */
+}
 
+.header-nav-itens{
     color: #000;
     font-family: Roboto;
     font-size: 1.25rem;
@@ -58,7 +69,6 @@ body{
 
 .header-button{
     margin: 1rem 4rem 2.31rem 4rem;
-
 }
 
 button{
@@ -84,6 +94,7 @@ button{
     height: 57.9375rem;
     border: 0.1rem solid black;
     border-top: 0rem;
+    padding-top: 2rem;
 }
 
 .banner-img{
@@ -91,6 +102,7 @@ button{
 }
 
 #banner h1{
+    width: 19rem;
     padding: 1.5rem;
     color: #000;
     font-family: Roboto;
@@ -133,7 +145,7 @@ button{
 
 /*CURSOS*/
 #cursos{
-    height: 93.4375rem;
+    height: 99.4375rem;
     border: 0.1rem solid black;
     border-top: 0rem;
 }
@@ -230,7 +242,7 @@ button{
 }
 
 .footer-tom{
-    height: 6.625rem;
+    height: 4.625rem;
     width: 3.3125rem;
     padding-top: 1rem;
     padding-left: 1.5rem;
@@ -246,6 +258,7 @@ button{
 }
 
 .footer-tom h2{
+    width: 7rem;
     color: #000;
     font-family: Roboto;
     font-size: 1rem;
@@ -268,15 +281,21 @@ button{
 }
 
 .footer-nav{
+    display: grid;
+    gap: 1.5rem;
+    padding-top: 2.3rem;
+    padding-left: 1.5rem;
+}
+
+.footer-nav-itens{
     color: #000;
     font-family: Roboto;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 
-    padding-top: 3rem;
-    padding-left: 1.5rem;
 }
 
 .footer3 h2{
